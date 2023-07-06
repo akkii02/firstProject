@@ -20,12 +20,21 @@
 // }
 
 // Using getElementsByClassName
-var items = document.getElementsByClassName('list-group')[0];
-var newLi = document.createElement('li');
-newLi.textContent = 'Item 4';
-items.appendChild(newLi);
+// var items = document.getElementsByClassName('list-group')[0];
+// var newLi = document.createElement('li');
+// newLi.textContent = 'Item 4';
+// items.appendChild(newLi);
 
-var  newItem = document.getElementById('items');
-var newLi5 = document.createElement('li');
-newLi5.textContent = 'Item 6';
-newItem.appendChild(newLi5)
+// var  newItem = document.getElementById('items');
+// var newLi5 = document.createElement('li');
+// newLi5.textContent = 'Item 6';
+// newItem.appendChild(newLi5)
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var secondItem = document.querySelector('#items li:nth-child(2)');
+    secondItem.style.backgroundColor = 'green';
+      var thirdItem = document.querySelector('#items li:nth-child(3)');
+    thirdItem.style.display = 'none';
+  });
+  
