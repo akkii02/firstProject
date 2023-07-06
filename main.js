@@ -9,8 +9,12 @@ mainTittle.style.border = '5px solid black';
 console.log(addItems.textContent)
 addItems.style.color='green';
 addItems.fontWeight = 'Bold';
+
+
+
 var addNewItems = document.getElementsByClassName('list-group-item');
-addNewItems[1].style.fontWeight = 'Bold'
-addNewItems[0].style.color = 'red';
-addNewItems[3].style.backgroundColor = 'yellow';
-addNewItems[2].textContent = 'Akshay';
+
+addNewItems[2].style.backgroundColor = 'green';
+for(let i=0;i<addNewItems.length;i++){
+    addNewItems[i].style.fontWeight = 'bold';
+}
